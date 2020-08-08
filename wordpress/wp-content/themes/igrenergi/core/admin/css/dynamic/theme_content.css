@@ -1,0 +1,386 @@
+/* ==================== ##General Styles ==================== */
+
+body {
+	font-family: $content_font_family;
+	font-size: $content_font_size;
+	line-height: $content_line_height;
+	font-weight: $content_font_weight;
+	color: $content_color;
+}
+
+/* ==================== ##End General Styles ==================== */
+
+/* ==================== ##Content Features ==================== */
+
+input:not([type=checkbox]):not([type=submit]),
+select, textarea,
+label,
+blockquote cite,
+#comments .commentlist .comment_info .meta-wrapper *,
+.author-info_name,
+.meta-wrapper,
+.blog-post_info-wrap > .meta-wrapper *,
+.irecco_module_time_line_vertical .time_line-title,
+.isotope-filter a .number_filter,
+.author-widget_text,
+.portfolio__custom-meta span,
+.blog-post.format-quote .blog-post_quote-author,
+.wgl_module_team .team-department,
+body .comment-form-cookies-consent > label,
+.widget_product_categories .post_count, 
+.widget_meta .post_count, 
+.widget_archive .post_count,
+.wgl-accordion .wgl-accordion_panel .wgl-accordion_content,
+.wgl-testimonials .wgl-testimonials_name,
+.elementor-widget-wgl-pricing-table .pricing_header .pricing_desc,
+.elementor-widget-wgl-time-line-vertical .time_line-content .time_line-text,
+.wgl-portfolio-single_wrapper .wgl-portfolio-item_cats,
+.wgl-working-hours .working-item .working-item_day,
+.wgl-working-hours .working-item .working-item_hours {
+	font-family: $content_font_family;
+}
+.elementor-widget-wgl-time-line-vertical .time_line-content .time_line-text {
+	font-weight: $content_font_weight;
+}
+
+.wgl-tabs .wgl-tabs_content-wrap .wgl-tabs_content {
+	font-family: $content_font_family;
+	font-weight: $content_font_weight;
+}
+
+::placeholder,
+select,
+body .footer .select__field:before,
+.widget_rss .rssSummary,
+.header_search.search_standard .header_search-field .search-field,
+.search-no-results .page_404_wrapper .search-form .search-field,
+.post_meta-categories span, .post_meta-categories span:after,
+.irecco_module_message_box .message_content .message_text,
+.vc_wp_custommenu .menu .menu-item.current-menu-item > a,
+.blog-post.format-quote .blog-post_quote-author-pos,
+.irecco_module_testimonials .testimonials_quote,
+.recent-posts-widget .meta-wrapper a:hover,
+.vc_row .vc_toggle .vc_toggle_icon,
+.isotope-filter a,
+.wgl_module_team .team-department,
+.blog-style-hero .blog-post.format-standard .meta-wrapper, 
+.blog-style-hero .blog-post.format-link .meta-wrapper, 
+.blog-style-hero .blog-post.format-audio .meta-wrapper, 
+.blog-style-hero .blog-post.format-quote .meta-wrapper,
+.blog-style-hero .blog-post.format-standard .meta-wrapper a, 
+.blog-style-hero .blog-post.format-link .meta-wrapper a, 
+.blog-style-hero .blog-post.format-audio .meta-wrapper a, 
+.blog-style-hero .blog-post.format-quote .meta-wrapper a,
+.blog-style-hero .blog-post.format-standard .blog-post_text, 
+.blog-style-hero .blog-post.format-link .blog-post_text, 
+.blog-style-hero .blog-post.format-audio .blog-post_text, 
+.blog-style-hero .blog-post.format-quote .blog-post_text,
+.wgl-pricing_plan .pricing_price_wrap .pricing_desc {
+	color: $content_color;
+}
+
+.single_meta .single_info-share_social-wpapper > span.share_title,
+.single_info-share_social-wpapper > span {
+	font-family: $content_font_family;		
+	color: $content_color;
+}
+
+.irecco_module_title .external_link .button-read-more {
+	line-height: $content_line_height;
+}
+
+/* ==================== ##End Content Features ==================== */
+
+/* ==================== ##Heading Features ==================== */
+
+h1,h2,h3,h4,h5,h6,
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.blog-post_cats,
+.blog-posts .blog-post_title,
+.column1 .item_title a,
+.irecco_twitter .twitt_title,
+.tagcloud-wrapper .title_tags,
+.strip_template .strip-item a span,
+.single_team_page .team-single_speaches-info .speech-info_desc span,
+.shortcode_tab_item_title,
+.index_number,
+.primary-nav.footer-menu .menu-item a {
+	font-family: $header_font_family;
+	font-weight: $header_font_weight;
+}
+
+.theme-header-font,
+#comments .comment-reply-link,
+input[type="submit"], button,
+legend,
+.widget,
+.widget .widget-title,
+.widget_rss ul li .rss-date,
+.widget_categories a,
+.widget_product_categories a,
+.widget_meta a,
+.widget_archive a,
+.banner_404,
+.page_404_wrapper .irecco_404__link,
+.wgl-social-share_pages.hovered_style .share_social-title,
+.blog-post_text-bg,
+.author-info_content .author-info_name,
+.button-read-more,
+.countdown-section .countdown-amount,
+.comments-title .number-comments,
+.wgl-button, .elementor-button,
+.wgl-pricing_plan .pricing_currency,
+.wgl-pricing_plan .pricing_price .price_decimal,
+.wgl-pricing_plan .pricing_plan_wrap .pricing_price_wrap,
+.irecco_module_progress_bar .progress_label,
+.irecco_module_double_headings,
+.irecco_module_infobox .infobox_icon_container .infobox_icon_number,
+.irecco_module_testimonials .testimonials_item:before,
+.irecco_module_testimonials .testimonials_status,
+.irecco_module_counter .counter_title,
+.irecco_module_videobox .title,
+.irecco_module_progress_bar .progress_value, 
+.irecco_module_progress_bar .progress_units,
+.irecco_module_counter .counter_value_wrapper, 
+.irecco_module_counter .counter_value_placeholder,
+.irecco_module_ico_progress .progress_value_completed,
+.irecco_module_ico_progress .progress_value_min, .irecco_module_ico_progress .progress_value_max,
+.irecco_module_ico_progress .progress_point,
+.mashsb-count .counts,
+.mashsb-box .mashsb-buttons a .text,
+.prev-link, .next-link,
+.vc_row .vc_tta.vc_general.vc_tta-style-accordion_bordered .vc_tta-panel-title>a span,
+ul.recent-posts-widget li > .recent-posts-content .post_title,
+.heading_subtitle,
+.info_prev-link_wrapper a, .info_next-link_wrapper a,
+.single_team_page .team-single_speaches-info .speech-info_day,
+.single_team_page .team-info_wrapper .team-info_item, .single_team_page .team-info_wrapper .team-info_item h5,
+.portfolio__custom-meta h5,
+.portfolio__item-meta .post_cats,
+.wgl-portfolio-item_cats,
+.isotope-filter a,
+body .comment-respond .comment-reply-title,
+.page-header_title,
+.irecco_module_services_2 .services_link,
+.irecco_module_testimonials.type_inline_top .testimonials_meta_wrap:after,
+.irecco_module_testimonials .testimonials_position,
+.irecco_module_services_4 .services_subtitle,
+[class|=dropcap], .elementor-drop-cap,
+.wgl-countdown .countdown-section .countdown-period,
+.wgl-testimonials .wgl-testimonials_quote,
+ul.wp-block-archives.wp-block-archives-list li a,
+ul.wp-block-categories.wp-block-categories-list li a,
+ul.wp-block-categories.wp-block-categories-list li .post_count,
+ul.wp-block-latest-posts li a,
+.elementor-counter,
+.wgl-counter .wgl-counter_value-wrap,
+.wgl-double_heading .dbl-subtitle,
+.wgl-pricing_plan .pricing_highlighter
+.load_more_item, .load_more_wrapper .load_more_item,
+.irecco-post-navigation .meta-wrapper span,
+ul.recent-posts-widget .meta-wrapper span,
+.elementor-widget .wgl-infobox .wgl-infobox_subtitle,
+.single_meta .meta-wrapper,
+#comments .commentlist .comment_author_says {
+	font-family: $header_font_family;
+}
+
+blockquote,
+.banner_404,
+.author-info_public,
+.wgl-portfolio-single_item .tagcloud .tagcloud_desc,
+.wgl_timetabs .timetabs_data .timetabs_item .item_time,
+.wgl_timetabs .timetabs_data .timetabs_item .content-wrapper .item_title,
+.wgl_timetabs .timetabs_headings .wgl_tab,
+.wgl-pricing_plan .pricing_content,
+.wgl-portfolio-single_item .single_info-share_social-wpapper .share_title {
+	font-family: $header_font_family;
+	color: $header_font_color;
+}
+
+.wgl-infobox_bg_title,
+.wgl-background-text,
+.elementor-section.wgl-add-background-text:before {
+	font-family: $header_font_family;
+	font-weight: $header_font_weight;
+}
+
+.theme-header-color,
+body .footer select option,
+button,
+h1,h2,h3,h4,h5,h6,
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.blog-style-hero .blog-post_title a,
+h3#reply-title a,
+.calendar_wrap tbody,
+.comment_author_says,
+.comment_author_says a,
+.search-field,
+.wgl-pagination .page .current,
+.wgl-pagination .page .prev, .wgl-pagination .page .next,
+.wgl-pagination .page-numbers:hover,
+.share_post-container .share_post,
+.tagcloud-wrapper .title_tags,
+.irecco_module_double_headings .heading_title,
+.irecco_module_testimonials .testimonials_item .testimonials_content_wrap .testimonials_name,
+.wgl-pricing_plan .pricing_plan_wrap .pricing_content > ul > li > b,
+.irecco_module_social .soc_icon,
+.irecco_module_counter .counter_value_wrapper,
+.prev-link-info_wrapper, .next-link-info_wrapper,
+.item_title a,
+.irecco_module_counter .counter_value_wrapper,
+.wgl_module_title.item_title .carousel_arrows a span:after,
+.wgl_module_team.info_under_image .team-department,
+.wgl-portfolio-item_wrapper .portfolio_link,
+.tagcloud a,
+.irecco_module_services_2 .services_link,
+ul.wp-block-archives.wp-block-archives-list li a,
+ul.wp-block-categories.wp-block-categories-list li a,
+ul.wp-block-latest-posts li a,
+.wgl-pricing_plan .pricing_plan_wrap .pricing_price_wrap,
+.blog-style-hero .blog-post.format-standard .blog-post_title a,
+.blog-style-hero .blog-post.format-link .blog-post_title a,
+.blog-style-hero .blog-post.format-audio .blog-post_title a,
+.blog-style-hero .blog-post.format-quote .blog-post_title a,
+.wgl-pagination .page-numbers,
+.wgl-button.elementor-button,
+.wgl-carousel .slick-arrow,
+.author-info_social-wrapper .author-info_social-link.fa,
+#comments .comment-reply-link:hover,
+.page_404_wrapper .search-form:after,
+.wgl-portfolio-single_wrapper .portfolio__item-meta > span:after,
+.button-read-more,
+.portfolio__see-more i,
+.wgl-header-row-section_top a:hover,
+.header_search.search_standard .header_search-field .search-form:after {
+	color: $header_font_color;
+}
+
+/* ↓ widgets ↓ */
+.author-widget_social a,
+.widget ul li,
+.widget ul li a,
+ul.recent-posts-widget .post_title a,
+.widget .widget-title .widget-title_wrapper,
+.widget_search .search-form:after, 
+.widget_search .woocommerce-product-search:after, 
+.widget_product_search .search-form:after, 
+.widget_product_search .woocommerce-product-search:after,
+.widget_product_search .woocommerce-product-search:after,
+.widget .banner-widget_button {
+	color: $header_font_color;
+}
+
+.widget_search .search-form:hover:after, 
+.widget_search .woocommerce-product-search:hover:after, 
+.widget_product_search .search-form:hover:after, 
+.widget_product_search .woocommerce-product-search:hover:after,
+.irecco_banner-widget .banner-widget_link:hover ~ .banner-widget_button .button-read-more,
+/* ↑ widgets ↑ */
+.wgl-theme-header .wgl-button.elementor-button,
+.irecco_module_title .carousel_arrows a span,
+.page_404_wrapper .search-form:hover:after,
+.wgl-pagination .page-numbers.current,
+.wgl-accordion-services .wgl-services_icon-wrap:before {
+	background: $header_font_color;
+}
+
+.slick-dots li button,
+.wgl-carousel .slick-dots li button:before,
+.irecco_module_infobox.infobox_alignment_left.title_divider .infobox_title:before,
+.irecco_module_infobox.infobox_alignment_right.title_divider .infobox_title:before {
+	background-color: $header_font_color;
+}
+
+.irecco_module_title .carousel_arrows a span:before,
+.wgl-pagination .page-numbers:hover,
+.wgl-pricing_plan .pricing_highlighter,
+.wgl-carousel.pagination_circle_border .slick-dots li.slick-active button,
+.wgl-carousel.pagination_square_border .slick-dots li.slick-active button {
+	border-color: $header_font_color;
+}
+
+/* ==================== ##End Heading Features ==================== */
+
+/* ==================== ##Additional Font ==================== */
+
+.wgl-pricing_plan .pricing_header .pricing_title__shadow,
+.blog-post_media .bg-read-more,
+.blog-post.format-quote .blog-post_quote-text:before,
+.wgl-double_heading .dbl-bg_text,
+.wgl-infobox .wgl-infobox_wrapper .wgl-infobox_subtitle,
+.wgl-striped-services .service-item_content .service-item_bg_text,
+.wgl-services-8 .wgl-services_bg_text {
+	font-family: $additional_font_family;
+	font-weight: $additional_font_weight;
+}
+
+/* ==================== ##End Additional Font ==================== */
+
+/* ==================== ##Additional Styles ==================== */
+
+#scroll_up {
+	color: $scroll_up_arrow_color;
+	background-color: $scroll_up_bg_color;
+}
+#scroll_up {
+	box-shadow: 4px 5px 16px rgba($rgb_scroll_up_bg, 0.4);
+}
+#scroll_up:not(:empty):hover {
+	color: $scroll_up_bg_color;
+	background-color: $scroll_up_arrow_color;
+}
+#scroll_up:not(:empty):hover {
+	box-shadow: 4px 5px 16px rgba(0,0,0, 0.2);
+}
+
+/* ↓ menu fonts ↓ */
+.primary-nav>div>ul,
+.primary-nav>ul,
+.sitepress_container > .wpml-ls li,
+.primary-nav ul li.mega-menu-links > ul > li {
+	font-family: $menu_font_family;
+	font-weight: $menu_font_weight;
+	line-height: $menu_font_line_height;
+	font-size: $menu_font_size;
+}
+
+/* ↓ sub menu styles ↓ */
+.primary-nav ul li ul,
+.wpml-ls,
+.sitepress_container > .wpml-ls ul ul li,
+.primary-nav ul li div.mega-menu-container {
+	font-family: $sub_menu_font_family;
+	font-weight: $sub_menu_font_weight;
+	line-height: $sub_menu_font_line_height;
+	font-size: $sub_menu_font_size;	
+}
+.wgl-theme-header .header_search-field,
+.primary-nav ul li ul,
+.primary-nav ul li div.mega-menu-container,
+.wgl-theme-header .woo_mini_cart,
+.wpml-ls-legacy-dropdown .wpml-ls-current-language .wpml-ls-sub-menu {
+	background-color: $sub_menu_bg;
+	color: $sub_menu_color;
+}
+.mobile_nav_wrapper,
+.wgl-menu_outer,
+.wgl-menu_outer .mobile-hamburger-close,
+.mobile_nav_wrapper .primary-nav ul li ul.sub-menu,
+.mobile_nav_wrapper .primary-nav ul li.mega-menu-links > ul.mega-menu > li > ul > li ul,
+.mobile_nav_wrapper .primary-nav ul li.mega-menu-links > ul.mega-menu > li > ul {
+	background-color: $mobile_sub_menu_bg;
+	color: $mobile_sub_menu_color;		
+}
+.mobile_nav_wrapper .wgl-menu_overlay {
+	background-color: $mobile_sub_menu_overlay;
+}
+/* ↑ sub menu styles ↑ */
+
+#side-panel .side-panel_sidebar .widget .widget-title .widget-title_wrapper {
+	color: $side_panel_title;
+}
+
+/* ==================== ##End Additional Styles ==================== */
