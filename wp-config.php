@@ -65,6 +65,7 @@ define( 'NONCE_SALT',       'ukB0;kgh#6#-^<01XP07wGT12n{a`yhUodo=Y pBjNqd6ELtup%
  */
 $table_prefix = 'igrenwp_';
 
+
 /**
  * For developers: WordPress debugging mode.
  *

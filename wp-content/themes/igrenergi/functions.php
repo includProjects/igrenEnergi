@@ -1,5 +1,4 @@
 <?php
-
 // Class Theme Helper
 require_once ( get_theme_file_path( '/core/class/theme-helper.php' ) );
 
@@ -292,63 +291,64 @@ function irecco_categories_postcount_filter($variable)
 				$icon_image_alt = get_post_meta($icon_image_id, '_wp_attachment_image_alt', true);
 				$replacement = '$1<img class="cats_item-image" src="'. esc_url($icon_image[0]) .'" alt="'.(! empty($icon_image_alt) ? esc_attr($icon_image_alt) : '').'"/>';
 				$pattern = '/(cat-item-'.$int.'+.*?><a.*?>)/';
-				$variable = preg_replace( $pattern, $replacement, $variable );
-			}
-		}
-	}
+    $variable = preg_replace( $pattern, $replacement, $variable );
+    }
+    }
+    }
 
-	return $variable;
-}
-add_filter('wp_list_categories', 'irecco_categories_postcount_filter');
+    return $variable;
+    }
+    add_filter('wp_list_categories', 'irecco_categories_postcount_filter');
 
-function irecco_render_archive_widgets($link_html, $url, $text, $format, $before, $after)
-{
-	$text = wptexturize($text);
-	$url  = esc_url($url);
+    function irecco_render_archive_widgets($link_html, $url, $text, $format, $before, $after)
+    {
+    $text = wptexturize($text);
+    $url = esc_url($url);
 
-	if ('link' == $format) {
-		$link_html = "\t<link rel='archives' title='" . esc_attr($text) . "' href='$url' />\n";
-	} elseif ('option' == $format) {
-		$link_html = "\t<option value='$url'>$before $text $after</option>\n";
-	} elseif ('html' == $format) {
+    if ('link' == $format) {
+    $link_html = "\t
+    <link rel='archives' title='" . esc_attr($text) . "' href='$url' />\n";
+    } elseif ('option' == $format) {
+    $link_html = "\t<option value='$url'>$before $text $after</option>\n";
+    } elseif ('html' == $format) {
 
-		$after = str_replace('(', '', $after);
-		$after = str_replace(' ', '', $after);
-		$after = str_replace('&nbsp;', '', $after);
-		$after = str_replace(')', '', $after);
+    $after = str_replace('(', '', $after);
+    $after = str_replace(' ', '', $after);
+    $after = str_replace('&nbsp;', '', $after);
+    $after = str_replace(')', '', $after);
 
-		$after = ! empty($after) ? " <span class='post_count'>".esc_html($after)."</span> " : "";
+    $after = ! empty($after) ? " <span class='post_count'>".esc_html($after)."</span> " : "";
 
-		$link_html = "<li>" . esc_html($before) . "<a href='" . esc_url($url) . "'>" . esc_html($text) . $after . "</a></li>";
-	} else { // custom
-		$link_html = "\t$before<a href='$url'>$text</a>$after\n";
-	}
+    $link_html = "<li>" . esc_html($before) . "<a href='" . esc_url($url) . "'>" . esc_html($text) . $after . "</a></li>
+    ";
+    } else { // custom
+    $link_html = "\t$before<a href='$url'>$text</a>$after\n";
+    }
 
-	return $link_html;
-}
-add_filter( 'get_archives_link', 'irecco_render_archive_widgets', 10, 6 );
+    return $link_html;
+    }
+    add_filter( 'get_archives_link', 'irecco_render_archive_widgets', 10, 6 );
 
-// Add image size
-if (function_exists( 'add_image_size' )) {
-	add_image_size( 'irecco-840-620',  840, 620, true  );
-	add_image_size( 'irecco-440-440',  440, 440, true  );
-	add_image_size( 'irecco-180-180',  180, 180, true  );
-	add_image_size( 'irecco-120-120',  120, 120, true  );
-}
+    // Add image size
+    if (function_exists( 'add_image_size' )) {
+    add_image_size( 'irecco-840-620', 840, 620, true );
+    add_image_size( 'irecco-440-440', 440, 440, true );
+    add_image_size( 'irecco-180-180', 180, 180, true );
+    add_image_size( 'irecco-120-120', 120, 120, true );
+    }
 
-// Include Woocommerce init if plugin is active
-if (class_exists( 'WooCommerce' )) {
-	require_once( get_theme_file_path ( '/woocommerce/woocommerce-init.php' ) ); 
-}
+    // Include Woocommerce init if plugin is active
+    if (class_exists( 'WooCommerce' )) {
+    require_once( get_theme_file_path ( '/woocommerce/woocommerce-init.php' ) );
+    }
 
-add_filter('irecco_enqueue_shortcode_css', 'irecco_render_css');
-function irecco_render_css($styles) {
-	global $irecco_dynamic_css;
-	if (! isset($irecco_dynamic_css['style'])) {
-		$irecco_dynamic_css = [];
-		$irecco_dynamic_css['style'] = $styles;
-	} else {
-		$irecco_dynamic_css['style'] .= $styles;
-	}
-}
-
+    add_filter('irecco_enqueue_shortcode_css', 'irecco_render_css');
+    function irecco_render_css($styles) {
+    global $irecco_dynamic_css;
+    if (! isset($irecco_dynamic_css['style'])) {
+    $irecco_dynamic_css = [];
+    $irecco_dynamic_css['style'] = $styles;
+    } else {
+    $irecco_dynamic_css['style'] .= $styles;
+    }
+    }
